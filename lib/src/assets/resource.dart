@@ -1,4 +1,4 @@
-import '../mlg_logger.dart';
+import '../l_logger.dart';
 
 class LogEvent {
   final String level;
@@ -7,12 +7,9 @@ class LogEvent {
   final DateTime dateTime;
   final String deviceId;
 
-  LogEvent(this.level, this.message, StackTrace? stackTrace,
-      [this.deviceId = ''])
+  LogEvent(this.level, this.message, StackTrace? stackTrace, [this.deviceId = ''])
       : dateTime = DateTime.now(),
-        stackTraceData = stackTrace != null
-            ? StackTraceUnit.getExceptionPlace(stackTrace)
-            : null;
+        stackTraceData = stackTrace != null ? StackTraceUnit.getExceptionPlace(stackTrace) : null;
 }
 
 final levelColors = {

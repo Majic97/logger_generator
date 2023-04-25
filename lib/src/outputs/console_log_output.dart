@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import '../mlg_logger.dart';
+import '../l_logger.dart';
 
 class ConsoleLogOutput implements LogOutput {
-  ConsoleLogOutput(this.name, {LogPrinter? printer})
-      : outputPrinter = printer ?? SimplePrinter();
+  ConsoleLogOutput(this.name, {LogPrinter? printer}) : outputPrinter = printer ?? SimplePrinter();
 
   @override
   LogPrinter outputPrinter;

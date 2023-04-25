@@ -1,4 +1,4 @@
-library mlg_logger;
+library l_logger;
 
 export 'assets/ansi_colors.dart';
 export 'assets/resource.dart';

@@ -1,4 +1,4 @@
-import '../mlg_logger.dart';
+import '../l_logger.dart';
 
 class ListLogOutput implements LogOutput {
   // в аргумент list можно вставлять ТОЛЬКО ССЫЛКУ НА УЖЕ СУЩЕСТВУЮЩИЕ ОБЪЕКТЫ

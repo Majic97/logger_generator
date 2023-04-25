@@ -1,7 +1,7 @@
 import 'package:csv/csv.dart';
 import 'package:path_provider/path_provider.dart';
 
-import '../mlg_logger.dart';
+import '../l_logger.dart';
 import 'dart:io';
 
 class FileLogOutput implements LogOutput {
@@ -21,8 +21,7 @@ class FileLogOutput implements LogOutput {
   void init() async {
     String directory = (await getApplicationSupportDirectory()).path;
     if (directory.isNotEmpty) {
-      String date =
-          "${DateTime.now().year}-${DateTime.now().month}-${DateTime.now().day}";
+      String date = "${DateTime.now().year}-${DateTime.now().month}-${DateTime.now().day}";
       String path = "$directory/${prefix}loggs-$date.csv";
       _file = File(path);
     }
@@ -37,9 +36,7 @@ class FileLogOutput implements LogOutput {
         logEvent.level,
         logEvent.message != null ? 'Message: ${logEvent.message}' : '',
         '${logEvent.dateTime.toString()} ',
-        logEvent.stackTraceData != null
-            ? logEvent.stackTraceData.toString()
-            : ''
+        logEvent.stackTraceData != null ? logEvent.stackTraceData.toString() : ''
       ],
       [] // необходимо для правильного добавления новой строки в файл
     ];

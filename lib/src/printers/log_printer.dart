@@ -1,4 +1,4 @@
-import '../mlg_logger.dart';
+import '../l_logger.dart';
 import '../assets/resource.dart';
 
 abstract class LogPrinter {

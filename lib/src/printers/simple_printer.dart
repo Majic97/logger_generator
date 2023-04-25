@@ -1,16 +1,12 @@
 import 'dart:convert';
 
-import '../mlg_logger.dart';
+import '../l_logger.dart';
 import '../printers/log_printer.dart';
 import '../assets/ansi_colors.dart';
 
 class SimplePrinter extends LogPrinter {
-  SimplePrinter(
-      {Map<String, String>? prefixes,
-      this.printTime = false,
-      this.colors = true})
-      : levelPrefixes =
-            prefixes ?? {"info": '[I]', 'warning': '[W]', 'error': '[E]'};
+  SimplePrinter({Map<String, String>? prefixes, this.printTime = false, this.colors = true})
+      : levelPrefixes = prefixes ?? {"info": '[I]', 'warning': '[W]', 'error': '[E]'};
 
   @override
   final Map<String, String> levelPrefixes;
