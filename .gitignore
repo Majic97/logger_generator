@@ -1,0 +1,10 @@
+#ignore all 
+/*
+
+#exept
+!.gitignore
+!/lib
+!build.yaml
+!pubspec.yaml
+
+

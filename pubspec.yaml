@@ -1,0 +1,24 @@
+name: logger_generator
+description: A new Flutter project.
+version: 1.0.0
+
+environment:
+  sdk: ">=2.18.0-216.0.dev <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  csv: ^5.0.1
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.11
+  build:
+  source_gen:
+  analyzer:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner:
+
+flutter:
